@@ -1,0 +1,237 @@
+/*this page add responsiveness to the index.html page*/
+
+/*applied when the width is 900px or below*/
+@media screen and (max-width: 900px) {
+
+	.heart-and-banned-icons{
+		display: none;
+	}
+	
+	label[for="more"] {
+		display: block;
+	}
+
+	.song-queue-section {
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+		width: 300px;
+		height: 64vh;
+		background-color: #000d1d;
+		box-shadow: 0px 0px 6px 0px white;
+		right: 0px;
+		top: 25%;
+		z-index: 5;
+		overflow: scroll;
+		padding-left:11px;
+		transition: visibility ease-in-out 0.2s;
+		transition: opacity ease-in-out 0.2s;
+	}
+
+	.queue_playlist_content {
+		overflow: visible;
+	}
+
+	input[id="more"]:checked ~ .song-queue-section {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.song-queue-section::-webkit-scrollbar {
+		display: none;
+	}
+
+	..song-queue-heading{
+		margin-top: 5%;
+		margin-bottom: 3%;
+	}
+
+	.latest_release_content>div{
+		min-width: 250px;
+	}
+
+	.song-list-section{
+		width: 100%;
+	}
+
+	.slider-section{
+		height: 9%;
+	}
+	.inner-slider-section img{
+		height: 26vw;
+		width: 26vw;
+	}
+
+	.inner-slider-section img:hover{
+		height: 30vw;
+		width: 30vw;
+	}
+
+	.theme_section{
+		justify-content: space-around;
+	}
+
+	.theme_content{
+		right: 18%;
+		position: relative;
+	}
+}
+
+/*applied when the width is 800px or below*/
+@media screen and (max-width: 800px){
+
+	/*class .favourites disappear when the width is 800px or below*/
+	.favourites-music{
+		display: none;
+	}
+}
+
+/*applied when the width is 700px or below*/
+@media screen and (max-width: 700px){
+
+	/*bell ring class disappear at this width */
+	.bell-ring{
+		display: none;
+	}
+
+	/*alteration to the song name class*/
+	.song_name_artist {
+    margin-left: 2%;
+    margin-right: 2%;
+    white-space: nowrap;
+	}
+
+	/*alteration to the outer-div2 clas*/
+	.outer-div2 {
+    width: 39vw;
+    height: 27vw;
+    min-width: 123px;
+    min-height: 82px;
+	}
+
+	/*the second child of player_volume_section class diappear*/
+	.player_volume_section > div:nth-child(2) {
+    display: none;
+	}
+
+	/*the fourth child of player_volume_section class diappear*/
+	.player_volume_section > div:nth-child(4) {
+    display: none;
+	}
+}
+
+/*applied when the width is 650px or below*/
+@media screen and (max-width: 650px){
+
+	/*.player_control_section class widt is adjusted*/
+	.player_control_section {
+    width: 64%;
+	}
+
+	/*.player_volume_section class is not displayed*/
+	.player_volume_section{
+		display: none;
+	}
+
+}
+
+/*applied when the width is 600px or below*/
+@media screen and (max-width: 600px){
+
+	/*music player section width is adjusted*/
+	.music_player_section {
+    width: 100%;
+	}
+
+	/*.played_song_description class in not displayed*/
+	.played_song_description{
+		display: none;
+	}
+}
+
+/*applied when the width is 500px or below*/
+@media screen and (max-width: 500px){
+
+	/*the various class of nav section is adjusted accordingly*/
+
+	.search-box input{
+		width: 30%;
+		margin-left: 122px;
+	}
+
+	.website_logo img{
+		height: 40px;
+		width: 40px;
+	}
+
+	.website_name{
+		white-space: nowrap;
+		position: absolute;
+		top: 1%;
+	}
+
+	.website_name h1{
+		font-size: 1rem;
+	}
+
+	.website_name h4{
+		font-size: 0.8rem;
+	}
+
+	.login-profile img{
+		height: 40px;
+		width: 40px;
+	}
+}
+
+
+/*applied when the width is 400px or below*/
+@media screen and (max-width: 400px){
+
+	/*font size of various class is adjusted accordingly*/
+
+	.popular_artist_content a div div i {
+		font-size: 8vw;
+	}
+
+	.text_common h1{
+		font-size: 1.2rem;
+	}
+
+	.song_description h3{
+		font-size: 1rem;
+	}
+
+	.song_description p{
+		font-size: 0.8rem;
+
+	}
+}
+
+/*applied when the width is 300px or below*/
+@media screen and (max-width: 300px){
+
+	/*width is adjusted*/
+	.latest_release_content>div{
+		min-width: 228px;
+	}
+
+}
+
+/*applied when the width is 325px or below*/
+@media screen and (max-width: 325px){
+
+	/*login is not diisplayed*/
+	.login-profile{
+		display: none;
+	}
+}
+
+/*applied when the width is 275px or below*/
+@media screen and (max-width: 275px){
+
+	/*search box is not displayed*/
+	.search-box{
+		display: none;
+	}
+}

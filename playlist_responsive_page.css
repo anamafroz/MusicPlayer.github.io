@@ -1,0 +1,254 @@
+/*add responsiveness to the playlist_page.html*/
+
+/*applied when the width is 800px or below*/
+@media screen and (max-width: 800px){
+	/*favourite class is not displayed*/
+	.favourites-music{
+		display: none;
+	}
+
+}
+
+/*applied when the width is 700px or below*/
+@media screen and (max-width: 700px){
+
+	/*bell ring class disappear at this width */
+	.bell-ring{
+		display: none;
+	}
+
+	/*alteration to the song name class*/
+	.song_name_artist {
+    margin-left: 2%;
+    margin-right: 2%;
+    white-space: nowrap;
+	}
+
+	/*the second child of player_volume_section class diappear*/
+	.player_volume_section > div:nth-child(2) {
+    display: none;
+	}
+
+	/*the fourth child of player_volume_section class diappear*/
+	.player_volume_section > div:nth-child(4) {
+    display: none;
+	}
+
+}
+
+/*applied when the width is 650px or below*/
+@media screen and (max-width: 650px){
+	/*the volume section is not displayed and control section is adjusted*/
+	.player_control_section {
+    width: 64%;
+	}
+
+	.player_volume_section{
+		display: none;
+	}
+
+	
+}
+
+/*applied when the width is 600px or below*/
+
+@media screen and (max-width: 600px){
+
+	/*music player section is assigned certain width and the played song description and playlist middle content is not displayed*/
+
+	.music_player_section {
+    width: 100%;
+	}
+	.played_song_description{
+		display: none;
+	}
+
+	.playlist_middle_content{
+		display: none;
+	}
+}
+
+/*applied when the width is 500px or below*/
+@media screen and (max-width: 500px){
+
+	/*the navigation part is adjusted accordingly*/
+
+	.search-box input{
+		width: 30%;
+		margin-left: 122px;
+	}
+
+	.website_logo img{
+		height: 40px;
+		width: 40px;
+	}
+
+	.website_name{
+		white-space: nowrap;
+		position: absolute;
+		top: 1%;
+	}
+
+	.website_name h1{
+		font-size: 1rem;
+	}
+
+	.website_name h4{
+		font-size: 0.8rem;
+	}
+
+	.login-profile img{
+		height: 40px;
+		width: 40px;
+	}
+
+}
+
+/**applied when the width is 900px or below*/
+@media screen and (max-width: 900px) {
+
+	.heart-and-banned-icons{
+		display: none;
+	}
+	
+	/*the checkbox will appear*/
+	label[for="more"] {
+		display: block;
+	}
+
+	.playlist_section2 {
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+		width: 300px;
+		height: 64vh;
+		background-color: #000d1d;
+		box-shadow: 0px 0px 6px 0px white;
+		right: 0px;
+		top: 25%;
+		z-index: 5;
+		overflow: scroll;
+		padding-left:11px;
+		transition: visibility ease-in-out 0.2s;
+		transition: opacity ease-in-out 0.2s;
+	}
+
+	.common {
+		overflow: visible;
+	}
+
+	/*on clicking the checkbox the playlist_section2 will appear*/
+	input[id="more"]:checked ~ .playlist_section2 {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.playlist_section2::-webkit-scrollbar {
+		display: none;
+	}
+
+	.queue_playlist_item {
+    	width: 95%;
+	}
+
+	.section-heading{
+		width: 95%;
+	}
+
+	.latest_release_content>div {
+    	width: 94%;
+	}
+
+	.playlist_section1{
+		width: 100%;
+	}
+}
+
+/*applied when the width is 950px or below*/
+@media screen and (max-width: 950px){
+
+	/*font size of various class is changed*/
+
+	.followers,.artist{
+		font-size: 1rem;
+	}
+
+	.artist_description{
+		font-size: 0.8rem;
+	}
+
+	.song_name h1{
+		font-size: 2rem;
+	}
+
+	.playlist_detail{
+		width: 73%;
+	}
+
+}
+
+/*applied when the width is 717px or below*/
+@media screen and (max-width: 717px){
+
+	/*song action is not displayed and playlist detail width is changed*/
+
+	.song_action{
+		display: none;
+	}
+
+	.playlist_detail{
+		width: 76%;
+	}
+
+
+}
+
+/*applied when the width is 275px or below*/
+@media screen and (max-width: 275px){
+	/*the artist name is not displayed*/
+	.artist{
+		display: none
+	}
+}
+
+/*applied when the width is 550px or below*/
+@media screen and (max-width: 550px){
+
+	/*artist description and followers are not displayed*/
+
+	.artist_description{
+		display: none;
+	}
+
+	.followers{
+		display: none;
+	}
+}
+
+/*applied when the width is 300px or below*/
+@media screen and (max-width: 300px){
+	
+	/*right content of playlist disappear*/
+	.playlist_right_content{
+		display: none;
+
+	}
+	
+}
+
+/*applied when the width is 325px or below*/
+@media screen and (max-width: 325px){
+
+	/*login profile disappears*/
+	.login-profile{
+		display: none;
+	}
+}
+
+/*applied when the width is 275px or below*/
+@media screen and (max-width: 275px){
+	/*here the search box disappears*/
+	.search-box{
+		display: none;
+	}
+}
