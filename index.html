@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BingMusic player</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="main_music.css">
+	<script src="https://kit.fontawesome.com/c0810a9e25.js" crossorigin="anonymous"></script>
+    <!-- the main css page to this page -->
+	<link rel="stylesheet" type="text/css" href="main_responsive page.css">
+    <!-- the responsive page is to add responsivness at various width -->
+    <link rel="stylesheet" type="text/css" href="main_music_responsive_page.css">
+</head>
+<body>
+        <!-- the navigation bar of the site containing logo,website name,search bar ,login part -->
+		<nav id="body-navigation-bar">
+			
+				    <!-- its the combination of website logo and name -->
+					<div class="website_combo">
+						<div class="website_logo">
+							<img src="icons/music-icon.png">
+							
+						</div>
+						<div class="website_name heading_common">
+								<h1>Bing music</h1>
+
+								<h4>play the music</h4>
+						</div>
+							
+					</div>
+				
+				    <!-- It display the heading favourite -->
+					<div class="favourites-music heading_common ">
+						<h1>favourites</h1>
+					</div>
+					
+				<div>
+					
+				</div>
+                    <!-- the search bar of the site -->
+					<div class="search-box">
+						<input type="search-box" name="" placeholder="search.....">
+						<i class="fas fa-search"></i>
+					</div>
+					
+                    <!-- notification bell of the site -->
+					<div class="bell-ring">
+						<i class="far fa-bell"></i>
+					</div>
+				    
+                    <!-- login profile of the site -->
+					<div class="login-profile">
+						<img src="icons/profile_pic.png">
+					</div>
+					
+				
+				
+		</nav>
+	
+
+    <!-- the main section of the site which consist of two sub section i.e song_list_section and song_queue_section -->
+	<main>
+
+        <!-- thisshows the song_list_section -->
+		<section class="song-list-section">
+
+			<!-- this shows the code for the slider section -->
+			<div class="slider-section">
+                <!-- the inner slider class of the slider section which contains the images -->
+				<div class="inner-slider-section">
+					<img src="https://cdn.pixabay.com/photo/2016/09/10/11/11/musician-1658887__340.jpg">
+					<img src="https://cdn.pixabay.com/photo/2013/02/22/09/03/singer-84874__340.jpg">
+					<img src="https://media.istockphoto.com/photos/beautiful-young-woman-singing-with-the-microphone-picture-id1156455788?b=1&k=6&m=1156455788&s=170667a&w=0&h=HLnlECISF3jwwuJXdg1i69dws9DgjWgn715nCxR7vGY=">
+					<img src="https://cdn.pixabay.com/photo/2020/04/14/03/08/expression-5040708__340.jpg">
+					<img src="https://media.istockphoto.com/photos/close-up-photo-of-cool-attractive-crazy-lady-kid-have-fun-visit-event-picture-id1158006464?b=1&k=6&m=1158006464&s=170667a&w=0&h=aW8XacbAk5g1itopi6rTEw8sItOfnqqXGi_5-jNzo2s=">
+				</div>
+			</div>
+
+			<!-- latest release section -->
+			<div class="latest_release_section heading_common text_common">
+				<h1>
+					latest release
+				</h1>
+				<!-- the latest release content section contains the cards -->
+				<div class="latest_release_content">
+					<!-- first card -->
+					<div class="latest_card">
+						<div>
+							<!-- image of the card -->
+							<img src="https://cdn.pixabay.com/photo/2020/04/14/03/08/expression-5040708__340.jpg">
+							<!-- play button image that will be displayed on hover of the image  -->
+							<div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+						</div>
+                        <!-- song description of the card i.e song name and date of release -->
+						<div class="song_description song_text">
+                            <h3>
+                                Onisum
+                            </h3>
+                            <p>
+                                Aug 11, 2017
+                            </p>
+                        </div>
+
+                        <!-- it shows various option on the click  -->
+                        <div class="option_section">
+                        	<label for="latest_release_checkbox"><i class="fas fa-ellipsis-h"></i></label>
+                        	<input type="checkbox" id="latest_release_checkbox">
+
+                        	<div class="latest_release_options">
+                        		<div class="option_item">
+                        			<p>
+                        				<i class="fas fa-play-circle"></i>
+                        				play now
+                        			</p>
+                        		</div>
+                        		<hr>
+                        		<div class="option_item">
+                        			<p>
+                        				<i class="fas fa-list-ul"></i>
+                        				add to queue
+                        			</p>
+                        		</div>
+                        		<hr>
+                        		<div class="option_item">
+                        			<p>
+                        				<i class="fas fa-music"></i>
+                        				add to playlist
+                        			</p>
+                        		</div>
+                        		<hr>
+                        		<div class="option_item">
+                        			<p>
+                        				<i class="fas fa-info-circle"></i>
+                        				get info
+                        			</p>
+                        		</div>
+                        	</div>
+                        	
+                        </div>
+					</div>
+
+					<!-- second card -->
+
+					<div class="latest_card">
+						<div>
+							<!-- image of the card -->
+							<img src="https://cdn.pixabay.com/photo/2020/04/14/03/08/expression-5040708__340.jpg">
+							<!-- play button image that will be displayed on hover of the image  -->
+							<div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+						</div>
+
+						<div class="song_description song_text">
+                            <h3>
+                                Onisum
+                            </h3>
+                            <p>
+                                Aug 11, 2017
+                            </p>
+                        </div>
+
+                        <div class="option_section">
+                        	<label for="latest_release_checkbox2"><i class="fas fa-ellipsis-h"></i></label>
+                        	<input type="checkbox" id="latest_release_checkbox2">
+
+                        	<div class="latest_release_options">
+                        		<div class="option_item">
+                        			<p>
+                        				<i class="fas fa-play-circle"></i>
+                        				play now
+                        			</p>
+                        		</div>
+                        		<hr>
+                        		<div class="option_item">
+                        			<p>
+                        				<i class="fas fa-list-ul"></i>
+                        				add to queue
+                        			</p>
+                        		</div>
+                        		<hr>
+                        		<div class="option_item">
+                        			<p>
+                        				<i class="fas fa-music"></i>
+                        				add to playlist
+                        			</p>
+                        		</div>
+                        		<hr>
+                        		<div class="option_item">
+                        			<p>
+                        				<i class="fas fa-info-circle"></i>
+                        				get info
+                        			</p>
+                        		</div>
+                        	</div>
+                        	
+                        </div>
+					</div>
+
+
+					<!-- third card -->
+
+					<div class="latest_card">
+						<div>
+							<!-- image of the card -->
+							<img src="https://cdn.pixabay.com/photo/2020/04/14/03/08/expression-5040708__340.jpg">
+							<!-- play button image that will be displayed on hover of the image  -->
+							<div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+						</div>
+
+						<div class="song_description song_text">
+                            <h3>
+                                Onisum
+                            </h3>
+                            <p>
+                                Aug 11, 2017
+                            </p>
+                        </div>
+
+                        <div class="option_section">
+                        	<label for="latest_release_checkbox3"><i class="fas fa-ellipsis-h"></i></label>
+                        	<input type="checkbox" id="latest_release_checkbox3">
+
+                        	<div class="latest_release_options">
+                        		<div class="option_item">
+                        			<p>
+                        				<i class="fas fa-play-circle"></i>
+                        				play now
+                        			</p>
+                        		</div>
+                        		<hr>
+                        		<div class="option_item">
+                        			<p>
+                        				<i class="fas fa-list-ul"></i>
+                        				add to queue
+                        			</p>
+                        		</div>
+                        		<hr>
+                        		<div class="option_item">
+                        			<p>
+                        				<i class="fas fa-music"></i>
+                        				add to playlist
+                        			</p>
+                        		</div>
+                        		<hr>
+                        		<div class="option_item">
+                        			<p>
+                        				<i class="fas fa-info-circle"></i>
+                        				get info
+                        			</p>
+                        		</div>
+                        	</div>
+                        	
+                        </div>
+					</div>
+
+
+					<!-- fourth card -->
+
+					<div class="latest_card">
+						<div>
+							<!-- image of the card -->
+							<img src="https://cdn.pixabay.com/photo/2020/04/14/03/08/expression-5040708__340.jpg">
+							<!-- play button image that will be displayed on hover of the image  -->
+							<div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+						</div>
+
+						<div class="song_description song_text">
+                            <h3>
+                                Onisum
+                            </h3>
+                            <p>
+                                Aug 11, 2017
+                            </p>
+                        </div>
+
+                        <div class="option_section">
+                        	<label for="latest_release_checkbox4"><i class="fas fa-ellipsis-h"></i></label>
+                        	<input type="checkbox" id="latest_release_checkbox4">
+
+                        	<div class="latest_release_options">
+                        		<div class="option_item">
+                        			<p>
+                        				<i class="fas fa-play-circle"></i>
+                        				play now
+                        			</p>
+                        		</div>
+                        		<hr>
+                        		<div class="option_item">
+                        			<p>
+                        				<i class="fas fa-list-ul"></i>
+                        				add to queue
+                        			</p>
+                        		</div>
+                        		<hr>
+                        		<div class="option_item">
+                        			<p>
+                        				<i class="fas fa-music"></i>
+                        				add to playlist
+                        			</p>
+                        		</div>
+                        		<hr>
+                        		<div class="option_item">
+                        			<p>
+                        				<i class="fas fa-info-circle"></i>
+                        				get info
+                        			</p>
+                        		</div>
+                        	</div>
+                        	
+                        </div>
+					</div>
+					
+				</div>
+			</div>
+
+
+			<!-- Popular artists section -->
+
+			<div class="popular_artist_section heading_common text_common">
+
+				<h1>
+					popular artists
+				</h1>
+
+                <!-- the popular artist content consist of the image and name of the various artist -->
+				<div class="popular_artist_content">
+                    <!-- it lands us to the playlist page corresponding to the artist -->
+					<a href="Playlist_page.html">
+						<div>
+							<img src="artist/ed sheeran.jpg">
+							<div><i class="fas fa-play"></i></div>
+						</div>
+						<p>Ed sheeran</p>
+					</a>
+					
+				    <!-- it lands us to the playlist page corresponding to the artist -->
+                    <a href="Playlist_page.html">
+                        <div>
+                            <img src="artist/adele.jpg">
+                            <div><i class="fas fa-play"></i></div>
+                        </div>
+                        <p>adele</p>
+                    </a>
+                    
+                <!-- it lands us to the playlist page corresponding to the artist -->
+                    <a href="Playlist_page.html">
+                        <div>
+                            <img src="artist/drake.jpg">
+                            <div><i class="fas fa-play"></i></div>
+                        </div>
+                        <p>drake</p>
+                    </a>
+                    
+                <!-- it lands us to the playlist page corresponding to the artist -->
+                    <a href="Playlist_page.html">
+                        <div>
+                            <img src="artist/Katy perry.jpg">
+                            <div><i class="fas fa-play"></i></div>
+                        </div>
+                        <p>Katy perry</p>
+                    </a>
+                    
+                <!-- it lands us to the playlist page corresponding to the artist -->
+                    <a href="Playlist_page.html">
+                        <div>
+                            <img src="artist/nicki minaj.jpg">
+                            <div><i class="fas fa-play"></i></div>
+                        </div>
+                        <p>nicki minaj</p>
+                    </a>
+                    
+                </div>
+			</div>
+
+            <div class="theme_section">
+                
+                <!-- contains the logo of the station -->
+                <div class="station">
+                    <div class="outer-div">
+                        <div class="inner-div1">
+                            <div class="inner-div2">
+                                <img src="icons/music-icon.png">
+                                <p>Stations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- different music theme types -->
+                <div class="theme_content">
+
+                    <div class="theme_type">
+                        <img src="theme_types/chill.jpg">
+                        <p>chill</p>
+                    </div>
+
+                    <div class="theme_type">
+                        <img src="theme_types/love.jpg">
+                        <p>love</p>
+                    </div>
+
+                    <div class="theme_type">
+                        <img src="theme_types/pop.jpg">
+                        <p>pop</p>
+                    </div>
+
+                    <div class="theme_type">
+                        <img src="theme_types/retro.jpg">
+                        <p>retro</p>
+                    </div>
+
+                    <div class="theme_type">
+                        <img src="theme_types/workout.jpg">
+                        <p>workout</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <!-- this contain songs of different themes -->
+            <div class="music_theme_section">
+                <div class="outer-div2">
+                    <div class="inner-div">
+                        <span>electronics</span>
+                    </div>
+                </div>
+
+                <div class="outer-div2">
+                    <div class="inner-div">
+                        <span>party</span>
+                    </div>
+                </div>
+
+                <div class="outer-div2">
+                    <div class="inner-div">
+                        <span>hip-hop</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- latest english song section -->
+            <div class="song_section heading_common text_common">
+                <h1>latest english</h1>
+
+                <!-- consist of image , name ,date of release of the song -->
+                <div class="song_section_content">
+                    <div class="song_description">
+                        <img src="https://images.unsplash.com/photo-1558770016-3019d6c1cacd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                        <h3>onisum</h3>
+                        <p>Aug 11, 2017</p>
+                    </div>
+
+                    <div class="song_description">
+                        <img src="https://images.unsplash.com/photo-1558770016-3019d6c1cacd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                        <h3>onisum</h3>
+                        <p>Aug 11, 2017</p>
+                    </div>
+
+                    <div class="song_description">
+                        <img src="https://images.unsplash.com/photo-1558770016-3019d6c1cacd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                        <h3>onisum</h3>
+                        <p>Aug 11, 2017</p>
+                    </div>
+
+                    <div class="song_description">
+                        <img src="https://images.unsplash.com/photo-1558770016-3019d6c1cacd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                        <h3>onisum</h3>
+                        <p>Aug 11, 2017</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- it shows the latest hindi section -->
+            <div class="song_section heading_common text_common">
+                <h1>latest hindi</h1>
+
+                <!-- consist of image , name ,date of release of the song -->
+                <div class="song_section_content">
+                    <div class="song_description">
+                        <img src="https://images.unsplash.com/photo-1558770016-3019d6c1cacd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                        <h3>tere sang</h3>
+                        <p>Aug 11, 2017</p>
+                    </div>
+
+                    <div class="song_description">
+                        <img src="https://images.unsplash.com/photo-1558770016-3019d6c1cacd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                        <h3>tere sang</h3>
+                        <p>Aug 11, 2017</p>
+                    </div>
+
+                    <div class="song_description">
+                        <img src="https://images.unsplash.com/photo-1558770016-3019d6c1cacd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                        <h3>tere sang</h3>
+                        <p>Aug 11, 2017</p>
+                    </div>
+
+                    <div class="song_description">
+                        <img src="https://images.unsplash.com/photo-1558770016-3019d6c1cacd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                        <h3>tere sang</h3>
+                        <p>Aug 11, 2017</p>
+                    </div>
+                </div>
+            </div>
+		</section>
+
+        <!-- this appears on the screen when we decrease the width to 900px or below and on clicking it displays the other sectionof the main i.e song-queue-section here -->
+        <label for="more"><i class="fas fa-angle-double-left"></i></label>
+         <input type="checkbox" id="more">
+        <!-- the song queue section starts from here -->
+		<section class="song-queue-section heading_common text_common">
+            <div class="song-queue-heading">
+                <h1>queue</h1>
+
+               
+
+                        <div class="option_section song-queue-option">
+                            <label for="latest_release_checkbox5" style="text-transform: capitalize;color: seagreen;font-size: 1.3rem;
+    font-weight: lighter;">queue<i class="fas fa-chevron-circle-down"></i>
+                            </label>
+                            <input type="checkbox" id="latest_release_checkbox5">
+
+                            <div class="latest_release_options song-queue-options">
+                                <div class="option_item">
+                                    <p>
+                                       
+                                        playlists
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="option_item">
+                                    <p>
+                                        favourites song
+                                        
+                                    </p>
+                                </div>
+                            </div>
+		              </div>
+                  </div>
+
+                      	<!-- this contains the content of the queue -->
+
+                        <div class="queue_playlist_content">
+
+                            <!-- first queue playlist  item -->
+                            <div class="queue_playlist_item">
+
+                                <!-- the left part consist of the playlist serial number and name and artist of the song -->
+                                <div class="playlist_left_part">
+                                    <div class="num">
+                                        01
+                                    </div>
+                                <div class="playlist_cover">
+                                    <img src="https://images.unsplash.com/photo-1504387103978-e4ee71416c38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                                    <div class="play-button">
+                                        <i class="fas fa-play" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                     <div class="named">
+                                        <div>
+                                             Mirage
+                                        </div>
+                                        <p>
+                                            Flume
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- the right part consist of the heart icon -->
+                                <div class="playlist_right_part">
+                                     <i class="far fa-heart"></i>
+                                </div>
+                                
+                            </div>
+
+                            <!-- second queue playlist item -->
+
+                            <div class="queue_playlist_item">
+
+                                <!-- the left part consist of the playlist serial number and name and artist of the song -->
+                                <div class="playlist_left_part">
+                                    <div class="num">
+                                        01
+                                    </div>
+                                <div class="playlist_cover">
+                                    <img src="https://images.unsplash.com/photo-1504387103978-e4ee71416c38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                                    <div class="play-button">
+                                        <i class="fas fa-play" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                     <div class="named">
+                                        <div>
+                                             Mirage
+                                        </div>
+                                        <p>
+                                            Flume
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- the right part consist of the heart icon -->
+                                <div class="playlist_right_part">
+                                     <i class="far fa-heart"></i>
+                                </div>
+                                
+                            </div>
+
+                             <!-- third queue playlist item -->
+                            <div class="queue_playlist_item">
+
+                                <!-- the left part consist of the playlist serial number and name and artist of the song -->
+                                <div class="playlist_left_part">
+                                    <div class="num">
+                                        01
+                                    </div>
+                                <div class="playlist_cover">
+                                    <img src="https://images.unsplash.com/photo-1504387103978-e4ee71416c38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                                    <div class="play-button">
+                                        <i class="fas fa-play" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                     <div class="named">
+                                        <div>
+                                             Mirage
+                                        </div>
+                                        <p>
+                                            Flume
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- the right part consist of the heart icon -->
+                                <div class="playlist_right_part">
+                                     <i class="far fa-heart"></i>
+                                </div>
+                                
+                            </div>
+
+                             <!-- forth queue playlist item -->
+
+                            <div class="queue_playlist_item">
+
+                                <!-- the left part consist of the playlist serial number and name and artist of the song -->
+                                <div class="playlist_left_part">
+                                    <div class="num">
+                                        01
+                                    </div>
+                                <div class="playlist_cover">
+                                    <img src="https://images.unsplash.com/photo-1504387103978-e4ee71416c38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                                    <div class="play-button">
+                                        <i class="fas fa-play" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                     <div class="named">
+                                        <div>
+                                             Mirage
+                                        </div>
+                                        <p>
+                                            Flume
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- the right part consist of the heart icon -->
+                                <div class="playlist_right_part">
+                                     <i class="far fa-heart"></i>
+                                </div>
+                                
+                            </div>
+
+                             <!-- fifth queue playlist item -->
+                            <div class="queue_playlist_item">
+
+                                <!-- the left part consist of the playlist serial number and name and artist of the song -->
+                                <div class="playlist_left_part">
+                                    <div class="num">
+                                        01
+                                    </div>
+                                <div class="playlist_cover">
+                                    <img src="https://images.unsplash.com/photo-1504387103978-e4ee71416c38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                                    <div class="play-button">
+                                        <i class="fas fa-play" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                     <div class="named">
+                                        <div>
+                                             Mirage
+                                        </div>
+                                        <p>
+                                            Flume
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- the right part consist of the heart icon -->
+                                <div class="playlist_right_part">
+                                     <i class="far fa-heart"></i>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+		</section>
+	</main>
+	<footer class="footer">
+
+        <div class="played_song_description">
+
+            <!-- image of the played song -->
+            <div class="song_image">
+                <img src="https://cdn.pixabay.com/photo/2020/04/14/03/08/expression-5040708__340.jpg">
+            </div>
+            <!-- name and artist of the played song -->
+            <div class="song_name_artist">
+                <div>
+                    Imagine by John
+                </div>
+                <div>
+                    John Lenon
+                </div>
+            </div>
+
+            <!-- contain the heart icon and ban icon -->
+             <div class="heart-and-banned-icons">
+                <span>
+                    <i class="far fa-heart"></i>
+                </span>
+                <span>
+                    <i class="fas fa-ban"></i>
+                </span>
+            </div>
+        </div>
+
+        <!-- music player section -->
+        <div class="music_player_section">
+
+            <div class="player_control_section">
+                <div><i class="fas fa-random"></i></div>
+                <div><i class="fas fa-step-backward"></i></div>
+                <div><i class="fas fa-pause-circle"></i></div>
+                <div><i class="fas fa-step-forward"></i></div>
+                <div><i class="fas fa-redo"></i></div>
+            </div>
+            
+            <!-- the slider section -->
+            <div id="player-slider">
+
+                <div class="song_time">
+                    1:02
+                </div>
+                
+                <div class="slider_container">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+                </div>
+
+                <div class="song_time">
+                    4:22
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- the volume part of footer -->
+
+        <div class="player_volume_section">
+            <div>
+                <i class="fas fa-list-ul"></i>
+            </div>
+            <div>
+                <i class="fas fa-laptop"></i>
+            </div>
+            <div>
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div class="slider_container" style="width:30%;">
+                <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+            </div>
+            <div>
+                <i class="fas fa-expand-alt"></i>
+            </div>
+        </div>
+		
+	</footer>
+</body>
+</html>
